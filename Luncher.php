@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '244848409:AAELTYFhw7389YwaUS4LgznVfBOTBjzPELE');
+define('BOT_TOKEN', '245927528:AAEtudLLTBnaSP5hXZ3FjGi4oT46GrVE150');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -120,7 +120,7 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 46853604;
+    $admin = 228468662;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
@@ -141,7 +141,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 121311764)
+        if($chat_id == 171486807)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -219,7 +219,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=pvresanbot
+ https://telegram.me/storebot?start=hiddenpvbot
 .";
     
     $bot_url    = "https://api.telegram.org/bot244848409:AAELTYFhw7389YwaUS4LgznVfBOTBjzPELE/"; 
@@ -251,10 +251,10 @@ $output = curl_exec($ch);
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
 
 🔹هر نفر = یک ربات ✖️
-🔸ربات دوم = 5000ت ✔️
+🔸ربات دوم = 1000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @arshiahp"));
+🚀 @Nightboy"));
       }
     }
       
@@ -328,10 +328,10 @@ $output = curl_exec($ch);
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
 
 🔹هر نفر = یک ربات ✖️
-🔸ربات دوم = 5000ت ✔️
+🔸ربات دوم = 1000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @arshiahp"));
+🚀 @Nightboy"));
       }
 
     }
@@ -380,5 +380,4 @@ if (!$update) {
 if (isset($update["message"])) {
   processMessage($update["message"]);
 }
-
 
